@@ -1,0 +1,17 @@
+{
+  "name": "node-fs",
+  "version": "1.0.0",
+  "description": "A custom koa quickstart template",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js"
+  },
+  "author": "fuhui <18915000292@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.5.3",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "lodash": "^4.17.11"
+  }
+}
