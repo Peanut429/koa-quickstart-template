@@ -6,7 +6,6 @@ module.exports = async (ctx, next) => {
     // 调用下一个中间件
     await next()
 
-    console.log('打印响应未处理结果：\nctx.body: ', ctx.body, '\n ctx.state: ', ctx.state)
     // 处理响应结果
     // 如果直接写入在body中，则不做处理
     // 如果写在ctx.body为空，则使用 state 作为响应

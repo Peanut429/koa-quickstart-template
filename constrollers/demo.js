@@ -1,6 +1,9 @@
+const simple = require('../mysql/simple')
 async function get (ctx, next) {
+  let result = await simple('select * from books')
+  console.log('result: ', result)
   ctx.state.data = {
-    msg: 'hello koa2'
+    data: result
   }
 }
 
