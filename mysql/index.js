@@ -1,10 +1,11 @@
 const mysql = require('mysql')
+const mysql_conf = require('../config')
 
 module.exports = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  port: 3306,
-  database: 'cAuth',
-  connectionLimit: 10
+  host: mysql_conf.host,
+  user: mysql_conf.user,
+  password: mysql_conf.password,
+  port: mysql_conf.port,
+  database: mysql_conf.database,
+  connectionLimit: mysql_conf.connectionLimit
 })
